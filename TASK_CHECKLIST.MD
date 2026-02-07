@@ -13,23 +13,12 @@
     - Steps to run web app
     - Steps to run mobile app (placeholder)
     - List of API endpoints
+    - Backend: Service layer (UserService for business logic)[1b5e0f47c2c9bb98e905d327358b404ce531ad9f]
+    - Backend: Security configuration (JWT or session-based authentication)[1b5e0f47c2c9bb98e905d327358b404ce531ad9f]
+    - Frontend: Routing and protected routes[1b5e0f47c2c9bb98e905d327358b404ce531ad9f]
+    - Documentation: Update FRS.pdf[d52d0cca257be732be90473fba60c2b8d8465469]
+        - ERD
+        - UML diagrams
+        - Screenshots: Register, Login, Dashboard/Profile, Logout
 
 
-## IN-PROGRESS
-- Backend: Service layer (UserService for business logic)
-- Backend: Security configuration (JWT or session-based authentication)
-- Frontend: Routing and protected routes
-- Documentation: Update FRS.pdf
-    - ERD
-    - UML diagrams
-    - Screenshots: Register, Login, Dashboard/Profile, Logout
-
-
-## TODO
-- Backend: Service layer (UserService for business logic)
-- Backend: Security configuration (JWT or session-based authentication)
-- Frontend: Routing and protected routes
-- Documentation: Update FRS.pdf
-    - ERD
-    - UML diagrams
-    - Screenshots: Register, Login, Dashboard/Profile, Logout
