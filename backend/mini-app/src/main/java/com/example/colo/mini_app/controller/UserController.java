@@ -1,7 +1,7 @@
 package com.example.colo.mini_app.controller;
 
 import com.example.colo.mini_app.model.User;
-import com.example.colo.mini_app.repository.UserRepository;
+import com.example.colo.mini_app.service.UserService;
 import org.springframework.security.core.Authentication;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -15,16 +15,16 @@ import java.util.Map;
 @RequestMapping("/api/user")
 public class UserController {
 
-    private final UserRepository userRepository;
+    private final UserService userService;
 
-    public UserController(UserRepository userRepository) {
-        this.userRepository = userRepository;
+    public UserController(UserService userService) {
+        this.userService = userService;
     }
 
     @GetMapping("/me")
     public Map<String, Object> me(Authentication authentication) {
         String username = authentication.getName();
-        User u = userRepository.findByUsername(username).orElseThrow();
+        User u = userService.findByUsername(username);
         return Map.of(
                 "id", u.getId(),
                 "username", u.getUsername(),

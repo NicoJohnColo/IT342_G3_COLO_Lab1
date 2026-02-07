@@ -3,7 +3,7 @@
 ## DONE
 - Backend: Spring Boot project setup [694dcf9096d33d83337facd8597a949f60445a30]
 - Backend: Dependencies added (Spring Web, JPA, MySQL, Security, BCrypt) [694dcf9096d33d83337facd8597a949f60445a30]
-- Backend: MySQL database created and connected [commit_hash]
+- Backend: MySQL database created and connected [e47b6ad40e33b01f92cee27655d3b216f6fd4d1e]
 - Backend: User entity and repository implemented [ce400ad4bda1d838ac057498682ea8fcbaa32e76]
 - Frontend: ReactJS project setup [b7262f8408d8ef7ab7bdfe4d2576a12a8a7f84fb]
 - README.md update[b7262f8408d8ef7ab7bdfe4d2576a12a8a7f84fb]
@@ -16,16 +16,14 @@
 
 
 ## IN-PROGRESS
-- Backend: AuthController[ce400ad4bda1d838ac057498682ea8fcbaa32e76]
-    - POST /api/auth/register
-    - POST /api/auth/login
-- Backend: UserController[ce400ad4bda1d838ac057498682ea8fcbaa32e76]
-    - GET /api/user/me (protected)
-- Backend: Password encryption (BCrypt)
-- Frontend: Register page (form and API call)
-- Frontend: Login page (form and API call)
-- Frontend: Dashboard/Profile page (protected)
-- Frontend: Logout functionality
+- Backend: Service layer (UserService for business logic)
+- Backend: Security configuration (JWT or session-based authentication)
+- Frontend: Routing and protected routes
+- Documentation: Update FRS.pdf
+    - ERD
+    - UML diagrams
+    - Screenshots: Register, Login, Dashboard/Profile, Logout
+
 
 ## TODO
 - Backend: Service layer (UserService for business logic)
