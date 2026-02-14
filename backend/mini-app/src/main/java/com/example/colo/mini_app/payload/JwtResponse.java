@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 package com.example.colo.mini_app.payload;
 
 public class JwtResponse {
@@ -6,3 +7,6 @@ public class JwtResponse {
     public String getToken() { return token; }
     public void setToken(String token) { this.token = token; }
 }
+=======
+ 
+>>>>>>> mobile-regdash-profile
