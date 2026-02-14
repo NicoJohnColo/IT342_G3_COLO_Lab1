@@ -10,10 +10,17 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="📚 BookBud"
+        android:text="📚"
+        android:textSize="64sp"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BookBud"
         android:textSize="32sp"
         android:textStyle="bold"
-        android:textColor="#6200EE"
+        android:textColor="#FF6600"
         android:layout_marginBottom="8dp"/>
 
     <TextView
@@ -22,7 +29,7 @@
         android:text="Sign in to your account"
         android:textSize="14sp"
         android:textColor="#757575"
-        android:layout_marginBottom="32dp"/>
+        android:layout_marginBottom="40dp"/>
 
     <EditText
         android:id="@+id/etUsername"
@@ -32,6 +39,7 @@
         android:inputType="text"
         android:layout_marginBottom="16dp"
         android:paddingStart="16dp"
+        android:paddingEnd="16dp"
         android:background="@drawable/input_background"/>
 
     <EditText
@@ -42,12 +50,14 @@
         android:inputType="textPassword"
         android:layout_marginBottom="24dp"
         android:paddingStart="16dp"
+        android:paddingEnd="16dp"
         android:background="@drawable/input_background"/>
 
     <ProgressBar
         android:id="@+id/progressBar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:indeterminateTint="#FF6600"
         android:visibility="gone"
         android:layout_marginBottom="8dp"/>
 
@@ -56,18 +66,19 @@
         android:layout_width="match_parent"
         android:layout_height="56dp"
         android:text="Login"
-        android:backgroundTint="#6200EE"
+        android:backgroundTint="#FF6600"
         android:textColor="#FFFFFF"
         android:textSize="16sp"
-        android:layout_marginBottom="16dp"/>
+        android:textStyle="bold"
+        android:layout_marginBottom="12dp"/>
 
     <Button
         android:id="@+id/btnGoRegister"
         android:layout_width="match_parent"
         android:layout_height="56dp"
         android:text="Create Account"
-        android:backgroundTint="#FFFFFF"
-        android:textColor="#6200EE"
-        style="@style/Widget.AppCompat.Button.Borderless"/>
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:textColor="#FF6600"
+        android:textSize="15sp"/>
 
 </LinearLayout>

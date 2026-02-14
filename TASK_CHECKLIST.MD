@@ -20,11 +20,10 @@
     - ERD
     - UML diagrams
     - Screenshots: Register, Login, Dashboard/Profile, Logout
-
-## TODO – Session 2 (Mobile + Finalization)
-📱 Mobile Application (Android Kotlin)
-
    - Mobile: Android project setup (/mobile folder)[]
+
+## Progress – Session 2 (Mobile + Finalization)
+📱 Mobile Application (Android Kotlin)
    - Mobile: Register screen implementation[]
    - Mobile: Login screen implementation[]
    - Mobile: Dashboard/Profile screen (protected)[]
