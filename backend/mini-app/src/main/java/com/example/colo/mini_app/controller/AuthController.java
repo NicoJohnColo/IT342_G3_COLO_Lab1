@@ -14,9 +14,9 @@ import org.springframework.security.core.Authentication;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.web.bind.annotation.*;
 
-import java.time.LocalDateTime;
+import java.util.Map;
 
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = {"http://localhost:3000", "http://10.0.2.2:8080"})
 @RestController
 @RequestMapping("/api/auth")
 public class AuthController {
@@ -51,5 +51,13 @@ public class AuthController {
         // update last login
         userService.updateLastLogin(req.getUsername());
         return ResponseEntity.ok(new JwtResponse(token));
+    }
+
+    @PostMapping("/logout")
+    public ResponseEntity<?> logout(Authentication authentication) {
+        if (authentication != null) {
+            return ResponseEntity.ok(Map.of("message", "Logged out successfully"));
+        }
+        return ResponseEntity.status(401).body(Map.of("message", "Not authenticated"));
     }
 }

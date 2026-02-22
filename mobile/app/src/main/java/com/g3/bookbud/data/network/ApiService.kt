@@ -22,6 +22,11 @@ interface ApiService {
             @Body request: LoginRequest
     ): Response<JwtResponse>
 
+    @POST("api/auth/logout")
+    suspend fun logout(
+            @Header("Authorization") token: String
+    ): Response<Map<String, String>>
+
     @GET("api/user/me")
     suspend fun getProfile(
             @Header("Authorization") token: String
