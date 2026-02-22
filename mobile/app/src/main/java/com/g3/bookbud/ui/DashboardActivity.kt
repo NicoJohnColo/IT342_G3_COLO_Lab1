@@ -52,14 +52,17 @@ class DashboardActivity : AppCompatActivity() {
         }
 
         btnLogout.setOnClickListener {
-            sessionManager.clearSession()
-            Toast.makeText(this, "Logged out", Toast.LENGTH_SHORT).show()
-            redirectToLogin()
+            lifecycleScope.launch {
+                try {
+                    RetrofitInstance.api.logout(sessionManager.getToken()!!)
+                } catch (e: Exception) {
+                    // Continue with logout even if API call fails
+                }
+                sessionManager.clearSession()
+                Toast.makeText(this@DashboardActivity, "Logged out", Toast.LENGTH_SHORT).show()
+                redirectToLogin()
+            }
         }
-    }
-
-    private fun <T> findViewById(tvWelcome: Int): Any {
-
     }
 
     private fun redirectToLogin() {
