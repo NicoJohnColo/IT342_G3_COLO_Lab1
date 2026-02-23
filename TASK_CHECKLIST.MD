@@ -31,14 +31,15 @@
     - ERD
     - UML diagrams
     - Screenshots: Register, Login, Dashboard/Profile, Logout
-   - Mobile: Android project setup (/mobile folder)[]
+   - Mobile: Android project setup (/mobile folder)[ 4b798b31bd45f549125f7bdec497f99a74d5c6fd]
 
-## Progress – Session 2 (Mobile + Finalization)
 📱 Mobile Application (Android Kotlin)
-   - Mobile: Register screen implementation[]
-   - Mobile: Login screen implementation[]
-   - Mobile: Dashboard/Profile screen (protected)[]
-   - Mobile: Logout functionality[]
-   - Mobile: Connect to Spring Boot backend API[]
-   - Mobile: Token storage (JWT handling)[]
+   - Mobile: Register screen implementation[ 4b798b31bd45f549125f7bdec497f99a74d5c6fd]
+   - Mobile: Login screen implementation[ 4b798b31bd45f549125f7bdec497f99a74d5c6fd]
+   - Mobile: Dashboard/Profile screen (protected)[ 4b798b31bd45f549125f7bdec497f99a74d5c6fd]
+   - Mobile: Logout functionality[ 4b798b31bd45f549125f7bdec497f99a74d5c6fd]
+   - Mobile: Connect to Spring Boot backend API[ 4b798b31bd45f549125f7bdec497f99a74d5c6fd]
+   - Mobile: Token storage (JWT handling)[ 4b798b31bd45f549125f7bdec497f99a74d5c6fd]
 >>>>>>> mobile-regdash-profile
+
+
